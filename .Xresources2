@@ -1,0 +1,49 @@
+XTerm*selectToClipboard: true
+!##Enable a color supporting XTerm ##
+XTerm.termName: xterm-256color
+
+!## Set font and fontsize ##
+XTerm*faceName: DejaVu Sans Mono Regular
+XTerm*faceSize: 11
+
+! VT Font Menu: Unreadable
+XTerm*faceSize1: 8
+! VT Font Menu: Tiny
+XTerm*faceSize2: 10
+! VT Font Menu: Small
+XTerm*faceSize3: 12
+! VT Font Menu: Medium
+XTerm*faceSize4: 16
+! VT Font Menu: Large
+XTerm*faceSize5: 22
+! VT Font Menu: Huge
+XTerm*faceSize6: 24
+
+!## Keybindings ##
+XTerm*vt100.translations: #override \n\
+ Ctrl<Key>-: smaller-vt-font() \n\
+ Ctrl<Key>+: larger-vt-font() \n\
+ Ctrl<Key>0: set-vt-font(d) \n\
+ Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+ Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+
+!## Color Themes ##
+!XTerm*faceName:    DejaVu Sans Mono:pixelsize=13
+XTerm*background:  #111111
+XTerm*foreground:  #eeeeee
+XTerm*color0:      #000000
+XTerm*color1:      #9e1828
+XTerm*color2:      #aece92
+XTerm*color3:      #968a38
+XTerm*color4:      #414171
+XTerm*color5:      #963c59
+XTerm*color6:      #418179
+XTerm*color7:      #bebebe
+XTerm*color8:      #666666
+XTerm*color9:      #cf6171
+XTerm*color10:     #c5f779
+XTerm*color11:     #fff796
+XTerm*color12:     #4186be
+XTerm*color13:     #cf9ebe
+XTerm*color14:     #71bebe
+XTerm*color15:     #ffffff

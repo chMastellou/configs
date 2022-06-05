@@ -1,0 +1,48 @@
+" VIM .CONF
+"
+"highlights searches
+set hlsearch
+"does searches incremenentaly
+set incsearch
+
+"Sets Tab size to 4 spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+"Converts Tabs to spaces
+set expandtab
+set autoindent
+set fileformat=unix
+
+"sets default clipboard to the system clipboard
+set clipboard=unnamedplus
+
+
+" Some basics
+	"sets line numbering
+	set number
+	set nocompatible
+	"filetype plugin on
+	syntax on
+	"colorscheme
+	set encoding=utf-8
+	"disables automatic commenting on newline
+	autocmd FileType * setlocal formatoptions-=r formatoptions-=0
+
+	"Splits open at the bottom and right
+	set splitbelow splitright
+
+	"Paste from system clipboard with ctrl-i instead of shift-insert
+	map <S-Insert> <C-i>
+
+	"Automatically deletes all trailing whitespace on save
+	autocmd BufWritePre * %s/\s\+$//e
+
+	"Run xrdb whenever Xdefaults or Xresources are updated
+	autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
+
+
+"Copy selected text to system clipboard {requires gvim/nvim/vim-xll installed}
+vnoremap <C-c> "+y
+map <C-p> "+P
