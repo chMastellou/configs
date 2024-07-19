@@ -1,3 +1,4 @@
+```textile
     _                                            _
    T T                                          T T
    | |                                          | |
@@ -24,8 +25,9 @@
    l_i                                          l_j -Row
 
 ------------------------------------------------
-Thank you for visiting https://asciiart.website/
 This ASCII pic can be found at
 https://www.asciiart.website/index.php?art=movies/star%20wars
+
+```
 
 
